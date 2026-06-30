@@ -9,12 +9,12 @@ const {
 const router = express.Router();
 
 // Save Transcript
-router.post("/transcript", saveTranscript);
+router.post("/", saveTranscript);
 
 // Get All Transcripts of a Meeting
-router.get("/transcript/:meetingId", getTranscript);
+router.get("/:meetingId", getTranscript);
 
 // Delete Transcript
-router.delete("/transcript/:id", deleteTranscript);
+router.delete("/:id", deleteTranscript);
 
 module.exports = router;
